@@ -69,7 +69,7 @@ nav{
 
 /* product sell site style style start */
 .site{
-    padding: 80px 160px;
+    margin: 80px 160px;
     
 }
 .site-banner{
@@ -130,3 +130,57 @@ nav{
 }
 
 /* populer section style end */
+
+/* feature style start */
+.feature-section{
+    display: flex;
+    gap: 80px;
+    padding: 80px 160px;
+}
+.feature-img{
+    padding-top: 15px;
+}
+.feature-title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #0A0826;
+}
+.feature-sub-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.join{
+    color: #FFFFFF;
+    width: 155px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 15px 0px 0px 20px;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* feature style end */
+
+/* footer style start */
+.footer{
+    text-align: center;
+    background-color: #0A0826;
+    width: 100%;
+}
+.footer-title{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.footer-des{
+    color: #D9DBE1;
+    font-weight: 700;
+font-size: 14px;
+}
+.footer-icon .icon{
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-size: 1.5em;
+}
