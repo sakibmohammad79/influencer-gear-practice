@@ -36,18 +36,16 @@ nav{
 .header{
     display: flex;
     gap: 130px;
-}
-.header-title{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .header-banner{
-    padding-top: 60px;
     background: url(../images/Circle\ design.svg);
     background-repeat: no-repeat;
 }
 .header-title{
+    padding-top: 20px;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 45px;
     color: #3A3A3A;
 }
 .header-text{
@@ -69,8 +67,8 @@ nav{
 
 /* product sell site style style start */
 .site{
-    margin: 80px 160px;
-    
+    padding: 80px 160px;
+
 }
 .site-banner{
     display: flex;
@@ -96,6 +94,10 @@ nav{
     grid-template-columns:repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+}
+.populer-img{
+    width: 300px;
+    height: 256px;
 }
 .populer-sub-title{
     font-weight: 500;
@@ -183,4 +185,92 @@ font-size: 14px;
     height: 32px;
     color: white;
     font-size: 1.5em;
+}
+
+/* small device style */
+@media only screen and (max-width: 576px){
+    header{
+        padding: 10px;
+    }
+    .header{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .header-title{
+        padding-top: 0px;
+        font-size: 40px;
+    }
+    .populer-section{
+        padding: 10px;
+    }
+    .populer-img{
+        width: 100%;
+    }
+    .populer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-section{
+       flex-direction: column;
+       gap: 20px;
+       padding: 10px;
+    }
+    .feature-img{
+        width: 100%;
+    }
+    .site{
+        padding: 10px;
+    }
+    .site-banner{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        gap: 30px;
+    }
+}
+/* medium device style */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    header{
+        padding: 40px;
+    }
+    .header{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .header-title{
+        padding-top: 0px;
+        font-size: 45px;
+    }
+    .populer-section{
+        padding: 20px;
+    }
+    .populer-img{
+        width: 100%;
+    }
+    .populer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-section{
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+    .feature-img{
+        width: 100%;
+    }
+    .site{
+        padding: 20px;
+    }
+    .site-banner{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+        gap: 50px;
+    }
+    
 }
